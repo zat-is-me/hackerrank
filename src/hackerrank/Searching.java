@@ -6,7 +6,7 @@ public class Searching {
     int[] matchingStrings(String[] strings, String[] queries) {
 
         int []temp = new int[queries.length];
-//Creating array to store occurrence 
+        //Creating array to store occurrence 
         for(int i = 0;i<queries.length;i++){
             temp[i] = 0;
         }
