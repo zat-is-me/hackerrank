@@ -1,4 +1,8 @@
 package com.secondHasfirst;
+//Author Tatek Ahmed
+//This program will read strings from the file and
+//will check the first string apper at the second
+//string. the two string are located in new line in the file
 
 import java.io.File;
 import java.io.FileNotFoundException;
