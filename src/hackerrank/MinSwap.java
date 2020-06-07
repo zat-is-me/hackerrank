@@ -6,6 +6,16 @@ import java.time.LocalDateTime;
 
 public class MinSwap {
 
+	public static void main(String[] args) {
+		int[] arr = new int[] { 7, 1, 3, 2, 4, 5, 6 }; 
+		
+		System.out.println("\nBefor swap:");
+        
+        for(int i=0;i<arr.length;i++){
+            System.out.print(arr[i]+" ");
+        }
+		System.out.println("\nMinimun swap: "+minimumSwaps2(arr ));
+	}
 	static LocalDateTime myMin = LocalDateTime.now();
 	
 	// Complete the minimumSwaps function below.
@@ -16,10 +26,12 @@ public class MinSwap {
         int []swap = new int[arr.length];
         int []revers = new int[arr.length];
         System.out.println("Befor swap: ");
+        
         for(int i=0;i<arr.length;i++){
         	swap[i]=arr[i];
             System.out.print(arr[i]+" ");
         }
+        
         System.out.println("");
         for(int i=arr.length-1;i>=0;i--){
         	revers[i]=arr[i];
@@ -47,6 +59,7 @@ public class MinSwap {
             if(loop)
             	break;
         }
+        
         System.out.println("\nAfter swap the array is: ");
         for(int i=0;i<arr.length;i++) {
         	System.out.print(arr[i]+" ");
@@ -54,6 +67,35 @@ public class MinSwap {
         System.out.println("\nminumum swap is: "+ counter);
         //determine the step
 		return counter;
+    }
+    
+ // Complete the minimumSwaps function below.
+    static int[] swap(int[] arr, int j, int k ) {
+        int b=arr[k];
+        arr[k] = arr[j];
+        arr[j] = b;
+        return arr;
+    }
+
+    static int minimumSwaps2(int[] arr) {
+        int swaps = 0;
+        for (int i=0; i<arr.length; i++) {
+            for (int j=i+1; j<arr.length; j++) {
+            	
+                int k = j+Math.min(arr[j]-(j+1),3);
+                
+                if (arr[j]<j+1) {
+                    arr = swap(arr, j, k);
+                    swaps += 1;
+                    break;
+                }
+            }
+        }
+        System.out.println("\nAfter swap");
+        for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i]+ " ");
+		}
+        return swaps;
     }
 
 }

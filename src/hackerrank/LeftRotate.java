@@ -1,6 +1,11 @@
 package hackerrank;
 
 public class LeftRotate {
+	
+	public static void main(String[] args) {
+		int[] arr = new int[] { 2, 1, 4, 5, 3, 7, 6 }; 
+		MinSwap.minimumSwaps(arr );
+	}
 
 	static int[] rotatArray(int[] a, int d) {
 		int[] b =new int[a.length];
@@ -27,3 +32,18 @@ public class LeftRotate {
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

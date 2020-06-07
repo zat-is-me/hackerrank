@@ -51,3 +51,23 @@ class ArrayToList extends InvalidStringExeption implements MyList {
 		return arrayToString;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
