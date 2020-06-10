@@ -13,7 +13,7 @@ public class Main {
 		al.convert(a); al.replace(0); al.compact();
 		 
 		int[] arr = new int[] { 2, 1, 4, 5, 3, 7, 6 }; 
-		MinSwap.minimumSwaps(arr );
+		MinimumSwap.minimumSwaps(arr );
 		
 		int n = 9, // the size of the array
 				d = 8; // number of element to be shifted

@@ -2,7 +2,7 @@ package hackerrank;
 
 import java.util.stream.IntStream;
 
-public class MinSwap {
+public class MinimumSwap {
 
 	public static void main(String[] args) {
 		int[] arr = new int[] { 1, 3, 5, 2, 4, 6, 7 };
