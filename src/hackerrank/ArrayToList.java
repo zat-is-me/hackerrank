@@ -43,6 +43,7 @@ class ArrayToList extends InvalidStringExeption implements MyList {
 	
 	@Override
 	public ArrayList<String> compact() {
+		System.out.println ("Loop is started ");
 			for(int i=0;i<arrayToString.size();i++) {
 				if(arrayToString.get(i).equals(null)) {
 					arrayToString.remove(i);
